@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Instructors Assessment Application</title>
+</head>
+
+<body>
+
+    <div class="home">
+        <h2>Instructors Assessment</h2>
+        <div class="information">
+            <label for="faculty-label">Faculty: </label>
+            <select id="faculty" onChange="select()">
+                <option value="all">All</option>
+                <option value="scitech">Science & Technology</option>
+                <option value="arts">School of Arts</option>
+                <option value="law">School of Law</option>
+                <option value="busi">School of Business</option>
+            </select>
+
+            <label for="name" id="name-label">Instructor's Name: </label>
+            <input id="searchBar" type="text" class="name-input" required placeholder="Enter Name" />
+
+        </div>
+        <div class="list">
+            <ul id="charactersList">
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+
+        function select() {
+            var select = document.getElementById('faculty');
+            var facultyValue = select.options[select.selectedIndex].value;
+            facultyFilter(facultyValue);
+        }
+
+        window.onload = function () {
+            displayCharacters(character);
+        }
+
+    </script>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

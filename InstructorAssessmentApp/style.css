@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #f6d365, #fda085);
+    color:white;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    min-height: 100vh;
+    font-size: 24px;
+}
+
+.home {
+    display: absolute;
+    padding:0;
+    margin:0;
+    height:100vh;
+    color: black;
+}
+
+h2 {
+    display: absolute;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20vh;
+    margin-bottom: 20px;
+}
+
+.list {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#charactersList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.character {
+    list-style-type: none;
+}
+
+.character > a {
+    background-color: #eaeaea;
+    min-width:450px;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image';
+    text-align: left;
+    text-decoration: none;
+}
+
+.character > a > name {
+    font-size: 20px;
+    grid-area: name;
+    margin-bottom: 0px;
+}
+
+.character > a > p {
+    font-size: 18px;
+    grid-area: house;
+    margin: 0;
+    margin-top: -18px;
+}
+
+.character > a > img {
+    max-height: 100px;
+    grid-area: image;
+}
+
+.pick {
+    color: green;
+}
+
+header {
+    min-height: 18vh;
+    display:flex;
+    flex-direction: column;
+    color: black;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.information {
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#faculty{
+    margin-left: 10px;
+    width: 360px;
+    height: 40px;
+    padding: 5px 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#name-label {
+    margin-left: 40px;
+}
+
+#searchBar{
+    margin-left: 10px;
+    width: 360px;
+    height: 40px;
+    padding: 5px 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    align-items: right;
+}
+
+
+
+
+
+
+
+
+
+
+form {
+    background-color: rgb(27, 27, 50, .9);
+    color:rgb(226, 230, 222);
+    max-width: 890px;
+    display: block;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px -1px 10px 5px purple;
+}
+
+.picture {
+    display: flex;
+    margin: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.content {
+    display: block; 
+    text-align: center;
+    font-size: 24px;
+    padding: 1em;
+}
+
+h6 {
+    color:rgb(173, 173, 173);
+    margin-bottom: 0.75em;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#content-label {
+    margin: auto;
+    width: 400px;
+    text-align: left;
+}
+
+
+
+
+.rating {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    font-size: 16px;
+}
+
+.star {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 70px;
+}
+
+.rating input{
+    display: inline-flex;
+    width: 70px;
+    align-items: center;
+}
+
+
+
+
+
+label[for=comment] {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+
+
+span {
+    min-width: 350px;
+}
+
+
+#comment {
+    display: block;
+    min-height: 150px;
+    min-width: 750px;
+    margin: auto;
+    margin-top: -20px;
+}
+  
+label[for=comment]{
+    margin-top: 30px
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #37af65;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 0;
+  font-size: 20px;
+}
+
+.modal-content {
+    color: black;
+    font-size: 16px;
+    min-height: 600px;
+}
+
+body > button{
+    max-width: 900px;
+    margin:auto;
+    margin-bottom: 100px;
+}
