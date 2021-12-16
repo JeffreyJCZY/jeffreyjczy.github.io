@@ -5,7 +5,8 @@
 }
 
 body {
-    background-image: linear-gradient(120deg, #f6d365, #fda085);
+    background: rgb(84, 96, 118);
+    /* background-image: linear-gradient(120deg, #bebebe, #fda085); */
     color:white;
     font-family: 'M PLUS 1 Code', sans-serif;
     min-height: 100vh;
@@ -47,7 +48,7 @@ h2 {
 }
 
 .character > a {
-    background-color: #eaeaea;
+    background-color: #eaeaeaf3;
     min-width:450px;
     border-radius: 3px;
     padding: 10px 20px;
@@ -134,14 +135,6 @@ h1 {
 }
 
 
-
-
-
-
-
-
-
-
 form {
     background-color: rgb(27, 27, 50, .9);
     color:rgb(226, 230, 222);
@@ -222,7 +215,6 @@ h6 {
 
 
 
-
 label[for=comment] {
   margin-bottom: 10px;
   display: inline-block;
@@ -260,12 +252,14 @@ label[for=comment]{
 
 .modal-content {
     color: black;
+    background-color: rgb(148, 155, 166);
     font-size: 16px;
     min-height: 600px;
 }
 
-body > button{
+body > button{  
     max-width: 900px;
     margin:auto;
     margin-bottom: 100px;
 }
+
