@@ -5,16 +5,16 @@ import { Line } from "react-chartjs-2";
 import './App.css';
 
 const LineChart = (list) => {
-    console.log(list);
+    
 
     const gpaPerSem = list.gpaPerSem.map((v) => {
         return (parseFloat(v));
     })
-    console.log(gpaPerSem);
+    
 
     return (
         <MDBContainer>
-            <Line style={{ width: '70vw', height: '50vh' }}
+            <Line style={{ width: '60vw', height: '30vh' }}
                 data={{
                     labels: list.perSem,
                     datasets: [
@@ -31,7 +31,7 @@ const LineChart = (list) => {
                     responsive: true,
                     scales: {
                         y: {
-                            min: 2,
+                            min: 0,
                             max: 4
                         }
 

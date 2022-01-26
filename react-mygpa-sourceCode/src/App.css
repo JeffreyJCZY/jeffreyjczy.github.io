@@ -13,6 +13,7 @@
   padding-right:100px;
   margin: 0 auto;
   margin-top: 10px;
+  padding-top: 0px;
   margin-bottom: 20px;
   border-radius: 5px;
   z-index: 2;
@@ -23,9 +24,8 @@
 }
 .remove {
   position: absolute;
-  top: 5vh;
+  top: 4vh;
   right: 15vw;
-
 }
 
 canvas{
@@ -35,7 +35,7 @@ canvas{
 
  .my-modal .modal-content {
   color: black;
-  background-color: rgb(200, 202, 204);
+  background-color: rgb(248, 229, 220);
   font-size: 16px;
 }
 

@@ -17,8 +17,7 @@ function App() {
 
   const [singleSelections, setSingleSelections] = useState([]);
   const [dataCourses, setDataCourses] = useLocalStorage("dataCourses", []);
-  // const [gpaPerSem, setGpaPerSem] = useState([]);
-  // const [perSem, setPerSem] = useState([]);
+  
 
   // modal
   const [show, setShow] = useState(false);
@@ -44,7 +43,7 @@ function App() {
   })
 
   const addSubject = () => {
-
+    
     const subjectCode = subRef.current.state.selected[0].code;
     const subjectName = subRef.current.state.selected[0].name;
 
@@ -147,7 +146,7 @@ function App() {
             return (
               <Row>
                 <Col xs='1' style={{ textAlign: 'center' }}><FaTrash onClick={() => deleteClick(i)} /></Col>
-                <Col >
+                <Col xs = '2'>
                   {v.code}
                 </Col>
                 <Col xs='6'>
@@ -185,7 +184,7 @@ function App() {
 
                 <Row>
                   <Col xs='1' style={{ textAlign: 'center' }}><FaTrash onClick={() => deleteClick(i)} /></Col>
-                  <Col >
+                  <Col xs='2'>
                     {v.code}
                   </Col>
                   <Col xs='6'>
@@ -223,7 +222,6 @@ function App() {
 
           <div className="form1">
             {dataRows}
-            <br />
           </div>
 
           <LineChart gpaPerSem={gpaPerSem} perSem={perSem}/>

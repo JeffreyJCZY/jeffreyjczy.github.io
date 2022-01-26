@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-mygpa/static/css/main.4b80be23.css",
-    "main.js": "/react-mygpa/static/js/main.f366146d.js",
+    "main.css": "/react-mygpa/static/css/main.23174ee7.css",
+    "main.js": "/react-mygpa/static/js/main.19aaff33.js",
     "index.html": "/react-mygpa/index.html",
     "static/media/arrow_left.svg": "/react-mygpa/static/media/arrow_left.db6e2d88c7c35a775ce4.svg",
     "static/media/arrow_right.svg": "/react-mygpa/static/media/arrow_right.f7c6ac6d310d3b82f0a0.svg",
-    "main.4b80be23.css.map": "/react-mygpa/static/css/main.4b80be23.css.map",
-    "main.f366146d.js.map": "/react-mygpa/static/js/main.f366146d.js.map"
+    "main.23174ee7.css.map": "/react-mygpa/static/css/main.23174ee7.css.map",
+    "main.19aaff33.js.map": "/react-mygpa/static/js/main.19aaff33.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b80be23.css",
-    "static/js/main.f366146d.js"
+    "static/css/main.23174ee7.css",
+    "static/js/main.19aaff33.js"
   ]
 }
