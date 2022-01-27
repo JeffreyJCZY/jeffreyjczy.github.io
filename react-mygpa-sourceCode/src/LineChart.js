@@ -14,7 +14,7 @@ const LineChart = (list) => {
 
     return (
         <MDBContainer>
-            <Line style={{ width: '60vw', height: '30vh' }}
+            <Line style={{ width: '60vw', height: '30vh', maxWidth:'60vw', maxHeight:'30vh' }}
                 data={{
                     labels: list.perSem,
                     datasets: [

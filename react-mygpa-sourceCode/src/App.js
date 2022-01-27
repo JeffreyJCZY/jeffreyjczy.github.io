@@ -46,6 +46,7 @@ function App() {
     
     const subjectCode = subRef.current.state.selected[0].code;
     const subjectName = subRef.current.state.selected[0].name;
+    setSingleSelections([]);
 
     var found = false;
     dataCourses.forEach(course => {
@@ -239,9 +240,6 @@ function App() {
       <RenderGPA data={dataCourses} setDataCourses={setDataCourses} />
 
       <br />
-
-      {/* <LineChart /> */}
-
 
       <div style={{ textAlign: 'center' }}>
         <Button className="addSub" variant="danger " onClick={handleShow}>
