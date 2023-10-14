@@ -1,3 +1,0 @@
-mongodb+srv://jeffreyzhiyeechong:jeffreychong01@cluster0.ckcej0g.mongodb.net/
-
-mongoexport --uri="mongodb+srv://jeffreyzhiyeechong:jeffreychong01@cluster0.ckcej0g.mongodb.net/sample_supplies" --collection="sales" --jsonArray --out=sales.json
